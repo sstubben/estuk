@@ -1,4 +1,20 @@
-<h1>Listing books</h1>
+<h1>Books list</h1>
+<row>
+<% @books.each do |book| %>
+<div class="col-md-3">
+  <div class="thumbnail">
+    <%= image_tag "agwd.jpg", class: "img-responsive"%>
+    <div class="caption">
+      <h3><%= link_to   book.name, book_path(book) %></h3>
+      <h5> by <%= book.author %> </h5>
+      <p>Price: <%= number_to_currency(book.price) %></p>
+      <p><%= link_to "View more", book_path(book), class: "btn btn-primary" %></p>
+    </div>
+  </div>
+</div>
+<% end %>
+
+</row>
 
 <table>
   <thead>
