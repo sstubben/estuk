@@ -18,3 +18,5 @@
 # sublime
 *sublime-project
 *sublime-workspace
+
+.env

@@ -49,3 +49,5 @@ gem 'cancancan', '~> 1.10'
 gem 'paperclip'
 
 gem 'annotate'
+
+gem 'dotenv-rails', groups: :development
